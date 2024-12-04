@@ -18,12 +18,16 @@ import {
   UilExternalLinkAlt,
 } from "@iconscout/react-unicons";
 import comingsoon from "../../assets/comingsoon.jpg";
+import eCommerce from "../../assets/eCommerce.jpg";
+import blogging from "../../assets/blogging.jpg";
+import chatAPp from "../../assets/chatAPp.jpg";
+import shortUrl from '../../assets/shortUrl.jpg'
 
 function Project() {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      image: comingsoon,
+      title: "blogging",
+      image: blogging,
       techStack: [
         { icon: <UilReact />, name: "React Js" },
         { icon: <UilJavaScript />, name: "Node Js" },
@@ -31,12 +35,12 @@ function Project() {
         { icon: <UilBill />, name: "Razor Pay" },
         { icon: <UilTruck />, name: "Ship Rocket" },
       ],
-      github: "https://github.com/your-username/ecommerce-project",
+      github: "https://github.com/V-atz",
       liveDemo: "https://your-live-demo-link.com",
     },
     {
-      title: "Real-Time Chat App",
-      image: comingsoon,
+      title: "ecommerce",
+      image: eCommerce,
       techStack: [
         { icon: <UilJavaScript />, name: "Node Js" },
         { icon: <UilCheckCircle />, name: "Express Js" },
@@ -44,12 +48,12 @@ function Project() {
         { icon: <UilComments />, name: "Socket.io" },
         { icon: <UilPuzzlePiece />, name: "Algorithms" },
       ],
-      github: "https://github.com/your-username/chat-app",
+      github: "https://github.com/V-atz/E-commerce",
       liveDemo: "https://your-live-demo-link.com",
     },
     {
-      title: "Real-Time Chat App",
-      image: comingsoon,
+      title: "chat",
+      image: chatAPp,
       techStack: [
         { icon: <UilJavaScript />, name: "Node Js" },
         { icon: <UilCheckCircle />, name: "Express Js" },
@@ -57,12 +61,12 @@ function Project() {
         { icon: <UilComments />, name: "Socket.io" },
         { icon: <UilPuzzlePiece />, name: "Algorithms" },
       ],
-      github: "https://github.com/your-username/chat-app",
+      github: "https://github.com/V-atz/Chat-Application",
       liveDemo: "https://your-live-demo-link.com",
     },
     {
-      title: "Real-Time Chat App",
-      image: comingsoon,
+      title: "url",
+      image: shortUrl,
       techStack: [
         { icon: <UilJavaScript />, name: "Node Js" },
         { icon: <UilCheckCircle />, name: "Express Js" },
@@ -70,18 +74,7 @@ function Project() {
         { icon: <UilComments />, name: "Socket.io" },
         { icon: <UilPuzzlePiece />, name: "Algorithms" },
       ],
-      github: "https://github.com/your-username/chat-app",
-      liveDemo: "https://your-live-demo-link.com",
-    },
-    {
-      title: "Real-Time Chat App",
-      image: comingsoon,
-      techStack: [
-        { icon: <UilJavaScript />, name: "Node Js" },
-        { icon: <UilCheckCircle />, name: "Express Js" },
-        { icon: <UilDatabase />, name: "Mongo Db" },
-      ],
-      github: "https://github.com/your-username/chat-app",
+      github: "https://github.com/V-atz/URL-Shortener",
       liveDemo: "https://your-live-demo-link.com",
     },
   ];
@@ -100,9 +93,9 @@ function Project() {
           >
             <img
               src={project?.image}
-              style={{ height: "240px", width: "auto" }}
+              style={{ height: "240px", width: "240px" }}
               alt={project?.title}
-              className="mt-2 border object-cover rounded-md mb-3"
+              className="mt-2 border border-black object-cover rounded-md mb-3"
             />
             {/* <ul className="list-none grid grid-cols-3 gap-x-4 gap-y-2 items-center justify-center mb-4">
               {project.techStack.map((tech, idx) => (
@@ -117,19 +110,22 @@ function Project() {
                 // href={project.github}
                 // target="_blank"
                 // rel="noopener noreferrer"
-                onClick={() => alert("Coming Soon...")}
+                // onClick={() => alert("Error opening link")}
+                onClick={() => window.open(project.github, "_blank")}
                 className="rounded-lg px-3 py-1.5 border border-gray-700 text-gray-700 hover:text-white hover:bg-gray-700 flex items-center gap-2 text-sm"
               >
-                <UilGithubAlt />Github
+                <UilGithubAlt />
+                Github
               </button>
               <button
                 // href={project.liveDemo}
                 // target="_blank"
                 // rel="noopener noreferrer"
-                onClick={() => alert("Coming Soon...")}
+                onClick={() => alert("Launching Soon")}
                 className="rounded-lg px-2 py-1.5 border border-gray-700 text-gray-700 hover:text-white hover:bg-gray-700 flex items-center gap-2 text-sm"
               >
-                <UilExternalLinkAlt />Live Project
+                <UilExternalLinkAlt />
+                Website
               </button>
             </div>
           </div>

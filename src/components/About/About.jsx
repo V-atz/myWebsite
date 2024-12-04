@@ -40,15 +40,15 @@ function About() {
               </li>
               <li className="mb-2 flex gap-2 items-center">
                 <UilHtml5 />
-                <span className="font-medium">HTML</span>
-              </li>
-              <li className="mb-2 flex gap-2 items-center">
-                <UilCss3Simple />
-                <span className="font-medium">CSS</span>
+                <span className="font-medium">HTML & CSS</span>
               </li>
               <li className="mb-2 flex gap-2 items-center">
                 <UilJavaScript />
                 <span className="font-medium">JavaScript</span>
+              </li>
+              <li className="mb-2 flex gap-2 items-center">
+                <UilCheckCircle />
+                <span className="font-medium">Redux</span>
               </li>
               <li className="mb-2 flex gap-2 items-center">
                 <UilCheckCircle />

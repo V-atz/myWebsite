@@ -2,6 +2,7 @@ import React from "react";
 import vatzProfile2 from "../../assets/vatzProfile2.png";
 import { UilMessage } from "@iconscout/react-unicons";
 import resume_vatsalTandel from "../../assets/resume_vatsalTandel.pdf";
+import cv_vatsal from "../../assets/cv_vatsal.pdf"
 
 function Data() {
   return (
@@ -16,7 +17,7 @@ function Data() {
         <div className="flex items-center mt-4 gap-x-2">
           <div>
             <a
-              href={resume_vatsalTandel}
+              href={cv_vatsal}
               download
               className="bg-white border border-black flex gap-2 text-black py-2 px-4 rounded-full hover:bg-gray-200 transition duration-300"
             >

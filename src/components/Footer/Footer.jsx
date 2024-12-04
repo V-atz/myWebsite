@@ -37,7 +37,7 @@ function Footer() {
             <UilGithub size={24} />
           </a>
           <a
-            href="https://www.instagram.com/yourprofile"
+            href="https://www.instagram.com/vatz_4802/"
             className="mx-2 md:mx-4 text-gray-400 hover:text-white transition duration-300"
             target="_blank"
             rel="noopener noreferrer"
