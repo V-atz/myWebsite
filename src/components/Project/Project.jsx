@@ -21,10 +21,25 @@ import comingsoon from "../../assets/comingsoon.jpg";
 import eCommerce from "../../assets/eCommerce.jpg";
 import blogging from "../../assets/blogging.jpg";
 import chatAPp from "../../assets/chatAPp.jpg";
-import shortUrl from '../../assets/shortUrl.jpg'
+import shortUrl from "../../assets/shortUrl.jpg";
+import aiExtension from "../../assets/aiContentAnalyzer.jpg";
 
 function Project() {
   const projects = [
+    {
+      title: "aiExtension",
+      image: aiExtension,
+      techStack: [
+        { icon: <UilReact />, name: "React Js" },
+        { icon: <UilJavaScript />, name: "Node Js" },
+        { icon: <UilDatabase />, name: "Mongo Db" },
+        { icon: <UilBill />, name: "Razor Pay" },
+        { icon: <UilTruck />, name: "Ship Rocket" },
+      ],
+      github: "https://github.com/V-atz/AI-TextAnalyzer",
+      liveDemo:
+        "https://drive.google.com/drive/folders/1TwFM9MgG2iCRA4o7atvQGjQ9ZnyEK_ys?usp=drive_link",
+    },
     {
       title: "blogging",
       image: blogging,
@@ -36,7 +51,7 @@ function Project() {
         { icon: <UilTruck />, name: "Ship Rocket" },
       ],
       github: "https://github.com/V-atz",
-      liveDemo: "https://your-live-demo-link.com",
+      liveDemo: "",
     },
     {
       title: "ecommerce",
@@ -49,7 +64,7 @@ function Project() {
         { icon: <UilPuzzlePiece />, name: "Algorithms" },
       ],
       github: "https://github.com/V-atz/E-commerce",
-      liveDemo: "https://your-live-demo-link.com",
+      liveDemo: "",
     },
     {
       title: "chat",
@@ -62,7 +77,7 @@ function Project() {
         { icon: <UilPuzzlePiece />, name: "Algorithms" },
       ],
       github: "https://github.com/V-atz/Chat-Application",
-      liveDemo: "https://your-live-demo-link.com",
+      liveDemo: "",
     },
     {
       title: "url",
@@ -75,7 +90,7 @@ function Project() {
         { icon: <UilPuzzlePiece />, name: "Algorithms" },
       ],
       github: "https://github.com/V-atz/URL-Shortener",
-      liveDemo: "https://your-live-demo-link.com",
+      liveDemo: "",
     },
   ];
 
@@ -121,7 +136,13 @@ function Project() {
                 // href={project.liveDemo}
                 // target="_blank"
                 // rel="noopener noreferrer"
-                onClick={() => alert("Launching Soon")}
+                onClick={() => {
+                  if (project.liveDemo && project.liveDemo.startsWith("http")) {
+                    window.open(project.liveDemo, "_blank");
+                  } else {
+                    alert("Launching Soon");
+                  }
+                }}
                 className="rounded-lg px-2 py-1.5 border border-gray-700 text-gray-700 hover:text-white hover:bg-gray-700 flex items-center gap-2 text-sm"
               >
                 <UilExternalLinkAlt />
