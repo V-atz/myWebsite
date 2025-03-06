@@ -12,6 +12,9 @@ import {
   UilPuzzlePiece,
   UilLockAccess,
   UilComments,
+  UilProcess,
+  UilServer,
+  UilWind
 } from "@iconscout/react-unicons";
 import ScrollDown from "../Home/ScrollDown";
 import TimeLine from "./TimeLine";
@@ -47,11 +50,11 @@ function About() {
                 <span className="font-medium">JavaScript</span>
               </li>
               <li className="mb-2 flex gap-2 items-center">
-                <UilCheckCircle />
+                <UilProcess />
                 <span className="font-medium">Redux</span>
               </li>
               <li className="mb-2 flex gap-2 items-center">
-                <UilCheckCircle />
+                <UilWind />
                 <span className="font-medium">Tailwind</span>
               </li>
             </ul>
@@ -66,7 +69,7 @@ function About() {
                 <span className="font-medium">Node Js</span>
               </li>
               <li className="mb-2 flex gap-2 items-center">
-                <UilCheckCircle />
+                <UilServer />
                 <span className="font-medium">Express Js</span>
               </li>
               <li className="mb-2 flex gap-2 items-center">

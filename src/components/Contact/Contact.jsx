@@ -47,7 +47,7 @@ function Contact() {
   return (
     <>
       <ToastContainer />
-      <div className="p-6 h-[88vh] lg:h-[84vh] mb-[75px] lg:mb-[5px] max-w-4xl mx-auto">
+      <div className="p-6 h-[88vh] lg:h-[85vh] mb-[75px] lg:mb-[5px] max-w-4xl mx-auto">
         <div className="text-center mb-1 lg:mb-6">
           <h2 className="text-3xl font-semibold mt-4">Get In Touch</h2>
         </div>

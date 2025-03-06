@@ -23,6 +23,7 @@ import blogging from "../../assets/blogging.jpg";
 import chatAPp from "../../assets/chatAPp.jpg";
 import shortUrl from "../../assets/shortUrl.jpg";
 import aiExtension from "../../assets/aiContentAnalyzer.jpg";
+import qrVerseImg from '../../assets/qrVerseImg.jpg'
 
 function Project() {
   const projects = [
@@ -41,17 +42,17 @@ function Project() {
         "https://drive.google.com/drive/folders/1TwFM9MgG2iCRA4o7atvQGjQ9ZnyEK_ys?usp=drive_link",
     },
     {
-      title: "blogging",
-      image: blogging,
+      title: "qr",
+      image: qrVerseImg,
       techStack: [
-        { icon: <UilReact />, name: "React Js" },
         { icon: <UilJavaScript />, name: "Node Js" },
+        { icon: <UilCheckCircle />, name: "Express Js" },
         { icon: <UilDatabase />, name: "Mongo Db" },
-        { icon: <UilBill />, name: "Razor Pay" },
-        { icon: <UilTruck />, name: "Ship Rocket" },
+        { icon: <UilComments />, name: "Socket.io" },
+        { icon: <UilPuzzlePiece />, name: "Algorithms" },
       ],
-      github: "https://github.com/V-atz",
-      liveDemo: "",
+      github: "https://github.com/V-atz/QRverse",
+      liveDemo: "https://q-rverse.vercel.app/",
     },
     {
       title: "ecommerce",
@@ -64,6 +65,19 @@ function Project() {
         { icon: <UilPuzzlePiece />, name: "Algorithms" },
       ],
       github: "https://github.com/V-atz/E-commerce",
+      liveDemo: "",
+    },
+    {
+      title: "blogging",
+      image: blogging,
+      techStack: [
+        { icon: <UilReact />, name: "React Js" },
+        { icon: <UilJavaScript />, name: "Node Js" },
+        { icon: <UilDatabase />, name: "Mongo Db" },
+        { icon: <UilBill />, name: "Razor Pay" },
+        { icon: <UilTruck />, name: "Ship Rocket" },
+      ],
+      github: "https://github.com/V-atz",
       liveDemo: "",
     },
     {
