@@ -19,14 +19,28 @@ import {
 } from "@iconscout/react-unicons";
 import comingsoon from "../../assets/comingsoon.jpg";
 import eCommerce from "../../assets/eCommerce.jpg";
-import blogging from "../../assets/blogging.jpg";
 import chatAPp from "../../assets/chatAPp.jpg";
 import shortUrl from "../../assets/shortUrl.jpg";
 import aiExtension from "../../assets/aiContentAnalyzer.jpg";
 import qrVerseImg from '../../assets/qrVerseImg.jpg'
+import aiCompanion from '../../assets/aiCompanion.png'
 
 function Project() {
   const projects = [
+    {
+      title: "aiCompanion",
+      image: aiCompanion,
+      techStack: [
+        { icon: <UilReact />, name: "React Js" },
+        { icon: <UilJavaScript />, name: "Node Js" },
+        { icon: <UilDatabase />, name: "Mongo Db" },
+        { icon: <UilBill />, name: "Razor Pay" },
+        { icon: <UilTruck />, name: "Ship Rocket" },
+      ],
+      github: "https://github.com/V-atz/AI-Companion",
+      liveDemo:
+        "https://www.linkedin.com/posts/vatsal-tandel-588034202_promptengineering-aicompanion-groqapi-activity-7328402836491288577-AmIA?utm_source=share&utm_medium=member_desktop&rcm=ACoAADOeMTgB3Pd2qNHrb0GZodaXiT9fZ4BVTUA",
+    },
     {
       title: "aiExtension",
       image: aiExtension,
@@ -65,19 +79,6 @@ function Project() {
         { icon: <UilPuzzlePiece />, name: "Algorithms" },
       ],
       github: "https://github.com/V-atz/E-commerce",
-      liveDemo: "",
-    },
-    {
-      title: "blogging",
-      image: blogging,
-      techStack: [
-        { icon: <UilReact />, name: "React Js" },
-        { icon: <UilJavaScript />, name: "Node Js" },
-        { icon: <UilDatabase />, name: "Mongo Db" },
-        { icon: <UilBill />, name: "Razor Pay" },
-        { icon: <UilTruck />, name: "Ship Rocket" },
-      ],
-      github: "https://github.com/V-atz",
       liveDemo: "",
     },
     {

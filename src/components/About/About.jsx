@@ -8,13 +8,19 @@ import {
   UilHtml5,
   UilCss3Simple,
   UilJavaScript,
+  UilCommentAltEdit,
+  UilRobot,
   UilDatabase,
   UilPuzzlePiece,
+  UilGithubAlt,
   UilLockAccess,
+  UilShip,
   UilComments,
+  UilKeySkeleton,
   UilProcess,
+  UilCloudUpload,
   UilServer,
-  UilWind
+  UilWind,
 } from "@iconscout/react-unicons";
 import ScrollDown from "../Home/ScrollDown";
 import TimeLine from "./TimeLine";
@@ -31,10 +37,10 @@ function About() {
 
       <div className="container mx-auto px-4 mb-4 py-8">
         <h1 className="text-3xl font-semibold text-gray-800 mb-6">Skills</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="bg-white flex flex-col justify-start items-center rounded-lg shadow-md p-6">
             <h2 className="text-xl font-semibold text-gray-800 mb-4">
-              Frontend Development
+              Frontend
             </h2>
             <ul className="list-none">
               <li className="mb-2 flex gap-2 items-center">
@@ -61,7 +67,7 @@ function About() {
           </div>
           <div className="bg-white flex flex-col justify-start items-center rounded-lg shadow-md p-6">
             <h2 className="text-xl font-semibold text-gray-800 mb-4">
-              Backend Development
+              Backend
             </h2>
             <ul className="list-none flex flex-col">
               <li className="mb-2 flex gap-2 items-center">
@@ -86,11 +92,40 @@ function About() {
               </li>
             </ul>
           </div>
+          <div className="bg-white flex flex-col justify-start items-center rounded-lg shadow-md p-6">
+            <h2 className="text-xl font-semibold text-gray-800 mb-4">
+              Tools & AI
+            </h2>
+            <ul className="list-none flex flex-col">
+              <li className="mb-2 flex gap-2 items-center">
+                <UilRobot />
+                <span className="font-medium">AI Integration</span>
+              </li>
+              <li className="mb-2 flex gap-2 items-center">
+                <UilCommentAltEdit />
+                <span className="font-medium">Prompt Engineering</span>
+              </li>
+              <li className="mb-2 flex gap-2 items-center">
+                <UilShip />
+                <span className="font-medium">Docker</span>
+              </li>
+              <li className="mb-2 flex gap-2 items-center">
+                <UilCloudUpload />
+                <span className="font-medium">Cloudinary</span>
+              </li>
+              <li className="mb-2 flex gap-2 items-center">
+                <UilGithubAlt />
+                <span className="font-medium">GIT</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
 
       <div className="container mx-auto px-4 py-8">
-        <h1 className="text-3xl font-semibold text-gray-800 mb-6">Career Journey</h1>
+        <h1 className="text-3xl font-semibold text-gray-800 mb-6">
+          Career Journey
+        </h1>
         <TimeLine />
       </div>
       {/* <ScrollDown /> */}
